@@ -14,8 +14,8 @@
                         <updatePolicy>always</updatePolicy>
                     </snapshots>
                     <id>central</id>
-                    <name>devopsd-releases</name>
-                    <url>http://devopsd.cvshealth.com:8082/artifactory/cvs-eom-ere-releases-local</url>
+                    <name>central</name>
+                    <url>http://devopsd.cvshealth.com:8082/artifactory/cvs-eom-ere-releases-local/</url>
                 </repository>
             </repositories>
             <pluginRepositories>
@@ -29,15 +29,15 @@
                         <updatePolicy>always</updatePolicy>
                     </snapshots>
                     <id>central</id>
-                    <name>devopsd-releases</name>
-                     <url>http://devopsd.cvshealth.com:8082/artifactory/cvs-eom-ere-releases-local</url>
+                    <name>central</name>
+                     <url>http://devopsd.cvshealth.com:8082/artifactory/cvs-eom-ere-releases-local/</url>
                 </pluginRepository>
             </pluginRepositories>
-            <id>bintray</id>
+            <id>central</id>
         </profile>
     </profiles>
     <activeProfiles>
-        <activeProfile>bintray</activeProfile>
+        <activeProfile>central</activeProfile>
     </activeProfiles>
     <servers>
         <server>
