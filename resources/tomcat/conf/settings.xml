@@ -1,17 +1,8 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <settings xsi:schemaLocation='http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd'
           xmlns='http://maven.apache.org/SETTINGS/1.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
-          
- <mirrors>
-    <mirror>
-      <id>central</id>
-      <name>central</name>
-      <url>http://devopsd.cvshealth.com:8082/artifactory/cvs-eom-ere-releases-local</url>
-      <mirrorOf>cvs-eom-ere-releases-local</mirrorOf>
-    </mirror>      
- </mirrors>        
-          
-  <profiles>
+     
+    <profiles>
         <profile>
             <repositories>
                 <repository>
@@ -23,8 +14,8 @@
                         <enabled>true</enabled>
                         <updatePolicy>always</updatePolicy>
                     </snapshots>
-                    <id>central</id>
-                    <name>central</name>
+                    <id>cvs-eom-ere-releases-local</id>
+                    <name>cvs-eom-ere-releases-local</name>
                     <url>http://devopsd.cvshealth.com:8082/artifactory/cvs-eom-ere-releases-local</url>
                 </repository>
             </repositories>
@@ -38,22 +29,23 @@
                         <enabled>true</enabled>
                         <updatePolicy>always</updatePolicy>
                     </snapshots>
-                    <id>central</id>
-                    <name>central</name>
-                     <url>http://devopsd.cvshealth.com:8082/artifactory/cvs-eom-ere-releases-local</url>
+                    <id>cvs-eom-ere-releases-local</id>
+                    <name>cvs-eom-ere-releases-local</name>
+                    <url>http://devopsd.cvshealth.com:8082/artifactory/cvs-eom-ere-releases-local</url>
                 </pluginRepository>
             </pluginRepositories>
-            <id>central</id>
+            <id>cvs-eom-ere-releases-local</id>
         </profile>
     </profiles>
+          
     <activeProfiles>
-        <activeProfile>central</activeProfile>
+        <activeProfile>cvs-eom-ere-releases-local</activeProfile>
     </activeProfiles>
     <servers>
-        <server>
-            <id>central</id>
-            <username>api_eomere</username>
-            <password>S3CRet12!!</password>
-        </server>
+      <server>
+         <id>cvs-eom-ere-releases-local</id>
+         <username>api_eomere</username>
+         <password>S3CRet12!!</password>
+      </server>
     </servers>
 </settings>
