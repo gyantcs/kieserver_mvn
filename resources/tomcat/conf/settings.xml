@@ -7,11 +7,11 @@
       <id>central</id>
       <name>central</name>
       <url>http://devopsd.cvshealth.com:8082/artifactory/cvs-eom-ere-releases-local</url>
-      <mirrorOf>*</mirrorOf>
-    </mirror>
-  </mirrors>        
+      <mirrorOf>cvs-eom-ere-releases-local</mirrorOf>
+    </mirror>      
+ </mirrors>        
           
-    <profiles>
+  <profiles>
         <profile>
             <repositories>
                 <repository>
